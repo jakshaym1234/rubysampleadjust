@@ -7,9 +7,9 @@ options = {}
 OptionParser.new do |opts|
   opts.banner = "Usage: ruby server.rb [options]"
 
-  options[:port] = 8000
+  options[:port] = 80
   opts.on("-p", "--port [PORT]", Integer, "port to run server on") do |p|
-    options[:port] = p || 8000
+    options[:port] = p || 80
   end
 end.parse!
 
